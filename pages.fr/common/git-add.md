@@ -1,32 +1,36 @@
 # git add
 
-> Ajoute les fichiers modifiés à l'index.
+> Ajoute les fichiers changés pour un commit.
 > Plus d'informations : <https://git-scm.com/docs/git-add>.
 
-- Ajouter un fichier à l'index :
+- Ajoute un fichier pour un commit :
 
 `git add {{chemin/vers/fichier}}`
 
-- Ajouter tous les fichiers (suivis et non-suivis) :
+- Ajoute tous les fichiers (suivis et non-suivis) :
 
 `git add {{[-A|--all]}}`
 
-- Ajoute les modifications des fichiers déjà suivis :
+- Ajoute tous les fichiers récursivement depuis le dossier actuel :
+
+`git add .`
+
+- Ajoute seulement les fichiers déjà suivis :
 
 `git add {{[-u|--update]}}`
 
-- Ajoute aussi les fichiers ignorés :
+- Ajoute un fichier ignoré :
 
-`git add {{[-f|--force]}}`
+`git add {{[-f|--force]}} {{chemin/vers/fichier}}`
 
-- Ajoute des parties de fichiers interactivement :
+- Ajoute de manière intéractive des parties de fichier :
 
 `git add {{[-p|--patch]}}`
 
-- Ajoute interactivement les parties d'un fichier spécifié :
+- Ajoute de manière intéractive des parties d'un fichier :
 
 `git add {{[-p|--patch]}} {{chemin/vers/fichier}}`
 
-- Ajouter un fichier interactivement :
+- Ajoute un fichier de manière intéractive :
 
 `git add {{[-i|--interactive]}}`
